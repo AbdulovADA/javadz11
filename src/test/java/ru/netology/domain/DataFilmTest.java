@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DataFilmTest {
+    DataFilm data = new DataFilm();
     @Test
     void idDataFilm() {
         DataFilm data = new DataFilm(100,"test","drama");
@@ -20,5 +21,9 @@ public class DataFilmTest {
     void nameDataFilm() {
         DataFilm data = new DataFilm(100,"test","drama");
         assertEquals("test",data.getName());
+    }
+    @Test
+    void DataFilm() {
+        assertEquals(0, data.getId());
     }
 }
